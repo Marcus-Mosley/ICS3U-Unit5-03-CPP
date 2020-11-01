@@ -34,10 +34,11 @@ int percent_convert(std::string mark) {
         percent = 55;
     } else if (mark == "1-") {
         percent = 51;
-    } else if (mark == "R" || "r") {
+    } else if (mark == "R") {
         percent = 25;
+    } else {
+        percent = -1;
     }
-
     return percent;
 }
 
