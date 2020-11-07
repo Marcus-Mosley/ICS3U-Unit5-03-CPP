@@ -6,9 +6,8 @@
 
 #include <iostream>
 
-int percent_convert(std::string mark) {
+int percent_convert(std::string mark, int percent) {
     // This function converts a student's mark into a percentage
-    int percent;
 
     if (mark == "4+") {
         percent = 98;
@@ -53,7 +52,7 @@ main() {
     std::cout << " " << std::endl;
 
     // Call Functions
-    percent = percent_convert(mark);
+    percent = percent_convert(mark, percent);
 
     // Output
     std::cout << "The student's mark is " << percent << "%" << std::endl;
